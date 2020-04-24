@@ -21,12 +21,15 @@ public struct PartialSheetStyle {
 
     /// The color of the cover
     var coverColor: Color
+    
+    var cornerRadius: CGFloat
 
-    public init(backgroundColor: Color, handlerBarColor: Color, enableCover: Bool, coverColor: Color) {
+    public init(backgroundColor: Color, handlerBarColor: Color, enableCover: Bool, coverColor: Color, cornerRadius: CGFloat = 10.0) {
         self.backgroundColor = backgroundColor
         self.handlerBarColor = handlerBarColor
         self.enableCover = enableCover
         self.coverColor = coverColor
+        self.cornerRadius = cornerRadius
     }
 }
 
